@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogpost Summarizer</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Blogpost Summarizer</h1>
+        <p>✍🏾 Enter the URL of a blogpost to get a concise summary ✍🏾</p>
+      </header>
+
+      <form method="post">
+        <label for="url">Blogpost URL:</label>
+        <input
+          type="url"
+          id="url"
+          name="url"
+          placeholder="Enter the blogpost URL"
+          required
+        />
+        <button type="submit">Get Summary</button>
+      </form>
+
+      {% if summary %}
+      <div class="summary">
+        <h2>Summary</h2>
+        <p>{{ summary }}</p>
+      </div>
+      {% endif %}
+    </div>
+    <footer>
+      <p>Powered by Flask and Hugging Face Transformers</p>
+    </footer>
+  </body>
+</html>

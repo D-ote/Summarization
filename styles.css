@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #d0c6a7;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #c5705d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #f9e2e2;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+form input[type="url"],
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="url"] {
+  width: 100%;
+  border: 2px solid #eee;
+}
+
+form input[type="url"]:focus {
+  outline: none;
+  border-color: #6a9c89;
+}
+
+form button {
+  background-color: #6a9c89;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c1d8c3;
+  color: rgb(0, 0, 0);
+}
+
+/* Summary display styling */
+.summary {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fafafa;
+  border-left: 4px solid #6a9c89;
+  border-radius: 5px;
+  line-height: 1.8;
+}
+
+.summary h2 {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1.8rem;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
